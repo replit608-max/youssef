@@ -1,0 +1,77 @@
+.nav ul {
+  display: flex;
+  justify-content: space-evenly; /* توزيع الأيقونات بتساوي */
+  margin: 3% 5%;
+  gap: 20px;
+  background-color: var(--section-bg);
+  padding: 10px 5px;
+  border-radius: 25px;
+}
+
+/* تنسيق روابط الأيقونات داخل القائمة */
+.nav ul li a {
+  display: flex;
+  align-items: center;
+  color: var(--but-color);
+  padding: 10px;
+  border-radius: 30px;
+  border: 2px solid #9400d3;
+  font-size: 20px;
+  outline: 2px solid var(--but-color);
+  box-shadow: 0 8px 20px 10px rgba(253, 216, 53, 0.4);
+}
+
+/* تأثير عند تمرير الماوس على الأيقونات */
+.nav ul li {
+  transition: 0.3s;
+}
+
+.nav ul li:hover {
+  transform: scale(1.1);
+  box-shadow: 0 12px 24px rgba(251, 192, 45, 0.6);
+}
+
+* {
+  box-sizing: border-box; /* يخلي الحواف والهوامش تنحسب ضمن الحجم */
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  outline: none;
+}
+
+/* متغيرات الألوان العامة للموقع */
+:root {
+  --bg-color: #0b1021;         /* خلفية الموقع */
+  --text-color: #f0f4ff;       /* لون النص */
+  --but-color: #00bfff;        /* لون أزرار */
+  --hightlight-color: #66fcf1; /* لون مميز */
+  --section-bg: #141933;       /* خلفية الأقسام */
+  --purple: #b388eb;           /* بنفسجي للتظليل */
+}
+
+/* خلفية الصفحة */
+body {
+  background-color: var(--bg-color);
+}
+
+.sub{
+    display: flex; 
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.maths,.english{
+      margin-top: 5%;
+  width: 260px;
+      background-color: white;
+      height: 190px;
+    text-align: center;
+    border-radius: 40px;
+    margin-left: 3%;
+    transition: 0.3s;
+}
+.maths:hover,.english:hover{
+transform: scale(1.1);
+  box-shadow: 0px 0px 40px 10px var(--but-color);
+  }
